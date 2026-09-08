@@ -1,0 +1,55 @@
+﻿course_id,course_name,district,distance_km,osm_match_ratio,surface_known_ratio,surface_paved_ratio,surface_unpaved_ratio,surface_top,lit_known_ratio,lit_yes_ratio,lit_no_ratio,foot_known_ratio,foot_allowed_ratio,pedestrian_path_ratio,cycleway_ratio,steps_sample_ratio,smoothness_known_ratio,smoothness_good_ratio,highway_top
+RM_SEOUL_009,지하철 4호선 당고개역 ~ 코스 1-2 불암산 우회코스 갈림길,노원구,4.42,96.1,91.2,2.6,97.4,earth:149|asphalt:4|dirt:3,0.0,0.0,0.0,0.0,0.0,90.6,0.0,0.6,0.0,0.0,path:155|residential:5|motorway:4|trunk:4|track:2
+RM_SEOUL_004,탕춘대성 암문 ~ 코스 8-1 선림사 옆,은평구,6.27,100.0,86.9,41.6,52.5,earth:114|paving_stones:79|wood:13|asphalt:12|unpaved:1,0.0,0.0,0.0,58.3,100.0,80.6,0.0,6.3,0.0,0.0,path:195|residential:31|steps:16|footway:8|service:2
+RM_SEOUL_011,방이동 생태경관보전지역 ~ 수서역 5번출구,송파구,8.27,100.0,40.1,61.7,0.0,asphalt:65|rubber:51|paving_stones:13|concrete:4,10.5,100.0,0.0,27.7,100.0,51.5,36.4,0.0,17.2,100.0,footway:167|cycleway:121|residential:24|service:6|tertiary:4
+RM_SEOUL_005,7.빨래골지킴터 ~ 탕춘대성 암문,종로구,10.26,100.0,97.8,59.3,36.2,asphalt:203|earth:146|wood:17|paved:15|concrete:10,3.6,100.0,0.0,0.0,0.0,42.5,0.0,4.4,0.0,0.0,residential:203|path:159|steps:18|footway:16|tertiary:14
+RM_SEOUL_010,지하철 6호선 화랑대역 4번출구 ~ 지하철 5호선 광나루역 1번출구,중랑구,12.63,99.6,72.9,40.8,52.2,earth:125|asphalt:96|ground:62|paving_stones:29|concrete:25,19.8,39.0,61.0,5.1,100.0,73.1,2.4,6.1,4.8,37.5,path:219|footway:131|tertiary:41|steps:31|service:26
+RM_SEOUL_003,지하철 4호선 사당역 4번출구 ~ 지하철 1호선 석수역 1번출구,관악구,12.81,98.8,9.1,91.3,8.7,asphalt:22|paving_stones:20|earth:3|ground:1,3.7,100.0,0.0,26.6,93.3,78.3,2.2,1.8,4.3,100.0,path:362|service:39|footway:36|residential:32|trunk:12
+RM_SEOUL_007,코스 8-6 도봉탐방지원센터 옆 ~ 7.빨래골지킴터,강북구,14.31,100.0,97.0,26.0,70.7,earth:348|asphalt:102|ground:43|paving_stones:29|wood:18,5.1,0.0,100.0,4.7,37.0,75.3,0.0,2.4,0.2,100.0,path:410|residential:57|service:53|footway:19|secondary:16
+RM_SEOUL_008,1-1코스 창포원 관리사무소 앞 ~ 지하철 6호선 화랑대역 4번출구,노원구,14.61,93.2,85.9,18.6,81.2,earth:374|asphalt:58|paved:26|ground:7|paving_stones:2,0.5,100.0,0.0,2.0,100.0,82.8,1.5,0.0,0.0,0.0,path:409|residential:44|footway:43|secondary:28|service:9
+RM_SEOUL_012,코스 3-2 광진교 초입 ~ 방이동 생태경관보전지역,강동구,15.66,96.0,45.4,47.4,50.7,ground:139|asphalt:111|paving_stones:17|wood:5|concrete:2,4.8,100.0,0.0,9.6,98.3,56.7,18.2,1.2,23.2,0.0,path:277|cycleway:110|footway:65|residential:43|service:35
+RM_SEOUL_002,코스 6-1 석수역 앞 ~ 코스 7-1 가양대교 시작점,구로구,17.49,100.0,59.1,100.0,0.0,concrete:344|asphalt:71,0.4,33.3,66.7,78.9,64.4,13.2,73.5,0.4,2.3,100.0,cycleway:516|footway:76|service:33|trunk:23|pedestrian:16
+RM_SEOUL_006,"지하철 3호선, 분당선 수서역 6번 출구 ~ 지하철 2호선, 4호선 사당역 4번출구",서초구,17.74,100.0,44.6,2.5,97.2,unpaved:284|earth:17|asphalt:8|ground:7|tartan:1,0.4,100.0,0.0,7.6,94.4,80.9,7.3,1.1,15.0,0.0,path:536|cycleway:52|footway:38|service:33|residential:20
+RM_SEOUL_001,코스 7-1 가양대교 시작점 ~ 코스 8-1 선림사 옆,은평구,18.84,94.6,59.9,29.7,70.3,ground:301|asphalt:74|paving_stones:28|concrete:25,4.6,100.0,0.0,5.6,100.0,64.9,13.4,0.1,0.0,0.0,path:313|footway:149|cycleway:96|primary:62|unclassified:28
+RM_STREAM_001,황제천길,서대문구|종로구,2.1,100.0,50.6,100.0,0.0,paved:32|asphalt:11,37.6,0.0,100.0,0.0,0.0,21.2,37.6,0.0,0.0,0.0,cycleway:32|residential:18|pedestrian:18|trunk:8|trunk_link:4
+RM_STREAM_002,강남서초한강길,강남구|동작구|서초구,10.3,100.0,84.8,100.0,0.0,asphalt:330|concrete:12|paving_stones:7|paved:2,60.4,100.0,0.0,51.2,98.6,25.4,66.9,0.2,0.0,0.0,cycleway:277|footway:86|path:19|trunk_link:11|trunk:10
+RM_STREAM_003,강서한강길,강서구,9.29,98.9,78.6,100.0,0.0,asphalt:286|concrete:4,0.3,100.0,0.0,77.8,99.7,10.6,78.6,0.3,0.0,0.0,cycleway:290|path:35|unclassified:17|service:14|trunk:4
+RM_STREAM_004,양재천,강남구|서초구|용산구,10.97,98.6,38.2,100.0,0.0,asphalt:166,1.4,100.0,0.0,54.6,99.2,1.4,80.4,0.2,0.0,0.0,cycleway:349|track:22|service:17|trunk_link:13|tertiary:8
+RM_STREAM_005,여의천,서초구,5.71,80.0,1.6,100.0,0.0,asphalt:2|paving_stones:1,1.1,100.0,0.0,71.7,100.0,2.2,72.3,0.0,0.5,100.0,cycleway:133|residential:34|service:7|unclassified:3|footway:2
+RM_STREAM_006,영등포동작구한강길,강서구|동작구|영등포구,16.0,95.2,58.3,84.6,13.8,asphalt:253|dirt:41|paving_stones:33|concrete:14|ground:8,6.9,97.6,2.4,10.3,87.3,43.7,26.5,0.3,0.0,0.0,footway:166|cycleway:162|trunk:56|path:55|pedestrian:46
+RM_STREAM_007,굴포천2,서울,2.36,100.0,82.3,77.2,22.8,concrete:60|unpaved:18|asphalt:1,0.0,0.0,0.0,77.1,100.0,0.0,62.5,0.0,0.0,0.0,cycleway:60|unclassified:18|track:15|primary:3
+RM_STREAM_008,당현천 길,노원구,2.87,100.0,72.4,98.8,0.0,asphalt:83|wood:1,0.0,0.0,0.0,19.8,100.0,24.1,70.7,0.0,0.0,0.0,cycleway:82|pedestrian:24|footway:4|residential:2|secondary:2
+RM_STREAM_009,도림천,관악구|구로구|동작구|양천구|영등포구,9.79,99.2,1.3,100.0,0.0,asphalt:3|concrete:1|paving_stones:1,1.0,100.0,0.0,16.4,79.7,10.3,64.6,0.0,0.3,100.0,cycleway:252|footway:35|secondary:34|construction:34|tertiary:13
+RM_STREAM_010,도봉천 길,도봉구,1.2,90.0,100.0,73.3,0.0,asphalt:30|wood:12|paving_stones:3,4.4,100.0,0.0,4.4,100.0,62.2,4.4,0.0,0.0,0.0,footway:27|residential:11|service:4|cycleway:2|pedestrian:1
+RM_STREAM_011,도봉천길,노원구|도봉구,1.59,100.0,100.0,95.4,0.0,asphalt:62|stone:2|wood:1,60.0,100.0,0.0,63.1,100.0,27.7,63.1,0.0,6.2,100.0,cycleway:41|footway:16|residential:5|path:2|secondary:1
+RM_STREAM_012,반포천,동작구|서초구,2.56,100.0,7.7,100.0,0.0,asphalt:8,0.0,0.0,0.0,0.0,0.0,34.6,39.4,0.0,1.9,100.0,cycleway:41|footway:35|primary:8|service:7|primary_link:4
+RM_STREAM_013,불광천긴,마포구|서대문구|은평구,4.55,100.0,86.3,99.4,0.0,asphalt:86|concrete:57|paving_stones:8|paved:6|wood:1,50.8,92.5,7.5,0.0,0.0,20.2,73.8,2.2,0.0,0.0,cycleway:135|footway:37|secondary:5|steps:4|trunk:1
+RM_STREAM_014,성북천 길,동대문구|성동구|성북구|종로구,3.66,100.0,68.9,99.0,0.0,asphalt:101|wood:1,62.8,100.0,0.0,7.4,100.0,13.5,62.8,0.0,0.0,0.0,cycleway:93|residential:24|footway:17|primary:6|tertiary:4
+RM_STREAM_015,영등포구동작한강길,영등포구,3.87,100.0,47.4,44.6,55.4,dirt:41|asphalt:31|concrete:2,11.5,100.0,0.0,1.3,0.0,63.5,0.0,0.0,0.0,0.0,footway:58|path:41|secondary:39|service:6|primary:5
+RM_STREAM_016,독정천,강남구|송파구,2.8,95.6,25.7,100.0,0.0,asphalt:28,0.0,0.0,0.0,2.8,66.7,18.3,41.3,0.0,0.0,0.0,cycleway:45|footway:20|trunk:18|trunk_link:8|tertiary:8
+RM_STREAM_017,망월천 길,강동구,4.0,98.8,11.3,66.7,22.2,concrete:10|dirt:4|asphalt:2|포장/보도블럭:2,0.0,0.0,0.0,4.4,100.0,76.1,4.4,0.6,1.3,100.0,footway:119|construction:23|cycleway:7|primary:2|secondary:2
+RM_STREAM_018,방학천길,도봉구,1.96,100.0,58.8,97.9,0.0,asphalt:44|concrete:2|wood:1,52.5,100.0,0.0,48.8,100.0,31.2,60.0,0.0,0.0,0.0,cycleway:48|footway:25|residential:3|trunk:2|primary:1
+RM_STREAM_019,세곡천,강남구,3.87,92.9,2.1,100.0,0.0,asphalt:3,0.0,0.0,0.0,34.5,100.0,37.9,34.5,0.0,0.0,0.0,cycleway:50|pedestrian:28|footway:26|service:18|primary:10
+RM_STREAM_020,고덕천 길,강동구,4.07,100.0,14.0,100.0,0.0,asphalt:14|paved:8|paving_stones:1,0.0,0.0,0.0,32.9,72.2,40.2,37.8,0.0,0.0,0.0,footway:66|cycleway:62|unclassified:27|tertiary:5|service:2
+RM_STREAM_021,마포한강길,마포구|용산구,15.59,97.4,61.7,100.0,0.0,asphalt:349|paving_stones:26|concrete:1,9.5,98.3,1.7,8.9,72.2,28.4,52.9,0.3,0.0,0.0,cycleway:322|footway:146|service:45|trunk_link:29|pedestrian:26
+RM_STREAM_022,목감천,구로구,3.91,100.0,0.0,0.0,0.0,,0.0,0.0,0.0,4.4,0.0,7.6,88.6,0.0,0.0,0.0,cycleway:140|footway:12|primary:3|secondary:1|residential:1
+RM_STREAM_023,묵동천 길,노원구|성북구|중랑구,3.04,100.0,53.7,87.9,7.6,asphalt:53|paving_stones:5|earth:5|wood:3,0.8,100.0,0.0,43.1,100.0,19.5,41.5,0.0,0.0,0.0,cycleway:51|trunk:32|footway:19|service:9|path:5
+RM_STREAM_024,성내천 길,강동구|송파구,6.1,92.3,79.3,88.9,0.0,asphalt:147|rubber:15|paved:13|wood:4|asphalt;rubber:1,22.0,100.0,0.0,25.6,100.0,29.1,59.5,0.9,0.4,100.0,cycleway:135|footway:64|residential:9|service:5|living_street:4
+RM_STREAM_025,성동광진한강길,광진구|성동구,13.25,99.8,81.9,99.5,0.0,asphalt:424|paving_stones:6|concrete:3|황토:2,62.7,100.0,0.0,74.6,94.4,11.5,71.8,0.2,0.0,0.0,cycleway:381|footway:49|trunk:27|primary:26|trunk_link:20
+RM_STREAM_026,송파강동한강길,강동구|송파구,16.59,99.5,76.3,99.6,0.4,asphalt:372|concrete:131|ground:2,17.7,81.2,18.8,15.4,87.3,11.6,69.2,0.3,2.6,100.0,cycleway:458|footway:73|trunk_link:32|motorway_link:24|track:20
+RM_STREAM_027,안양천길,강서구|구로구|금천구|양천구|영등포구,15.77,89.9,23.8,97.8,0.0,asphalt:95|concrete:37|wood:3,0.4,100.0,0.0,11.4,66.2,31.2,55.8,0.0,0.0,0.0,cycleway:317|footway:177|secondary:26|trunk:18|primary_link:8
+RM_STREAM_028,용산한강길,마포구|용산구,8.6,98.6,79.5,100.0,0.0,asphalt:245|paved:21|paving_stones:5,19.1,98.5,1.5,37.8,97.7,19.4,51.6,0.3,0.0,0.0,cycleway:176|footway:57|trunk:44|unclassified:21|primary:20
+RM_STREAM_029,우이천 길,강북구|노원구|도봉구|성북구,7.73,99.7,71.3,99.5,0.0,asphalt:216|paving_stones:4|wood:1,0.0,0.0,0.0,67.1,100.0,18.7,67.1,0.0,0.0,0.0,cycleway:208|footway:49|residential:33|path:9|secondary:7
+RM_STREAM_030,중랑천 길,광진구|노원구|도봉구|동대문구|성동구|성북구|중랑구,21.64,98.2,77.1,98.8,0.0,asphalt:635|paving_stones:11|stone:8|concrete:2,21.4,95.1,4.9,47.0,97.2,32.1,58.9,0.0,11.5,100.0,cycleway:501|footway:273|trunk:70|secondary:4|primary:1
+RM_STREAM_031,청계천 길,동대문구|성동구|종로구|중구,8.18,100.0,46.5,96.7,0.7,asphalt:99|paving_stones:44|concrete:4|stepping_stones:3|wood:1,33.7,79.3,20.7,21.6,100.0,67.8,21.3,0.3,0.3,100.0,footway:218|cycleway:70|primary:19|trunk:7|trunk_link:4
+RM_STREAM_032,홍제천길,마포구|서대문구,5.96,100.0,84.2,99.5,0.0,asphalt:201|wood:1,42.9,99.0,1.0,11.2,100.0,2.5,62.9,0.4,0.0,0.0,cycleway:151|trunk:50|trunk_link:9|primary:7|secondary:6
+RM_STREAM_033,정릉천 길,동대문구|성동구|성북구,3.66,100.0,81.8,100.0,0.0,asphalt:121,33.8,98.0,2.0,33.8,100.0,3.4,35.8,0.0,0.0,0.0,trunk:69|cycleway:53|trunk_link:15|footway:5|primary:3
+RM_STREAM_034,탄천 길,강남구|송파구,7.44,93.3,75.6,100.0,0.0,asphalt:204|concrete:7,42.3,100.0,0.0,49.5,67.4,9.3,58.4,0.0,19.0,100.0,cycleway:163|trunk:49|path:17|trunk_link:17|tertiary:14
+RM_STREAM_035,굴포천,서울,7.6,99.7,67.4,23.4,76.6,dirt:157|concrete:27|asphalt:21,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,track:140|unclassified:65|service:59|primary:19|residential:13
+RM_WALL_036,낙산구간,성북구|종로구|중구,2.38,100.0,7.2,100.0,0.0,asphalt:7,0.0,0.0,0.0,0.0,0.0,71.1,0.0,1.0,0.0,0.0,path:38|footway:31|service:20|primary:7|steps:1
+RM_WALL_037,남산구간,용산구|중구,4.5,100.0,68.1,73.4,0.0,paved:38|asphalt:33|wood:32|concrete:12|paving_stones:8,1.1,100.0,0.0,37.4,100.0,68.1,0.0,18.7,3.3,100.0,path:91|steps:34|footway:28|service:22|pedestrian:5
+RM_WALL_038,낙산구간,성북구|종로구|중구,2.66,100.0,16.7,100.0,0.0,asphalt:16|paving_stones:2,0.0,0.0,0.0,0.0,0.0,76.9,0.0,0.9,0.0,0.0,footway:48|path:34|service:9|primary:9|primary_link:3
+RM_WALL_039,숭례문구간,서대문구|종로구|중구,2.43,100.0,15.2,100.0,0.0,asphalt:12|paving_stones:3,0.0,0.0,0.0,8.1,100.0,56.6,7.1,0.0,0.0,0.0,path:28|residential:22|pedestrian:15|footway:13|cycleway:7
+RM_WALL_040,흥인지문구간,종로구|중구,1.95,100.0,46.2,100.0,0.0,paved:23|paving_stones:11|asphalt:3,0.0,0.0,0.0,6.2,100.0,75.0,0.0,0.0,0.0,0.0,path:23|footway:20|pedestrian:17|residential:10|primary:3
+RM_WALL_041,백악구간,성북구|종로구,4.94,100.0,62.3,5.6,70.2,unpaved:83|wood:30|asphalt:7|earth:4,0.0,0.0,0.0,0.0,0.0,57.8,0.0,19.6,0.0,0.0,path:80|steps:39|footway:35|service:28|residential:8
+RM_WALL_042,인왕구간,종로구|중구,3.82,100.0,5.2,87.5,12.5,asphalt:7|dirt:1,1.9,100.0,0.0,0.0,0.0,76.6,0.0,9.1,0.0,0.0,path:115|steps:14|residential:9|tertiary:7|service:5
