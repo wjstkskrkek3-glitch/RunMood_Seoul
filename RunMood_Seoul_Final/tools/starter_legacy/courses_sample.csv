@@ -1,0 +1,2 @@
+﻿course_id,course_name,district,latitude,longitude,distance_km,difficulty,terrain,environment,mood_tags,elevation_gain_m,description,source
+SEOUL_001,예시 코스명,성동구,37.000000,127.000000,5.0,쉬움,평지,하천|공원,힐링|조용함|저녁,0,실제 데이터로 교체하세요,서울시 공공데이터

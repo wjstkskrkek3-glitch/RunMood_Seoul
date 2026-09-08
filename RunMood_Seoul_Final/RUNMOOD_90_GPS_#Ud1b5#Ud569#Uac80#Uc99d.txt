@@ -1,0 +1,53 @@
+RunMood Seoul 90코스 + GPS 완전통합본 검증
+생성일: 2026-09-08
+
+[보존 원칙]
+- 기존 기능 삭제/축소 없음
+- 90개 코스 절대 유지
+- 90코스 data/courses.csv 및 data/routes.geojson을 기준 데이터로 사용
+- GPS 기능은 기존 추천 기능 위에 선택적으로 추가
+
+[코스 검증]
+- courses.csv: 90개 / course_id 고유 90개
+- routes.geojson: 90개 / course_id 고유 90개
+- CSV에만 있고 GeoJSON에 없는 ID: 0
+- GeoJSON에만 있고 CSV에 없는 ID: 0
+- route_type=loop: 35개
+- GPS 아트(is_gps_art=True): 6개
+
+[기존 기능 유지]
+- v21.9 감정 확장 추천
+- 초급 1.4~5km / 중급 5~10km / 고급 10~15km / 전문가 15km+
+- 일반 추천 랜덤/세션 중복 방지
+- 순환형 / 출발지 복귀형 / GPS 아트 요청
+- 자연어 추가 요청
+- 로그인/회원가입/커뮤니티/공유 UI
+- 화장실/음수대/편의점/약국/지하철 등 주변시설
+- 지도/고도/보행/노면/조명/대기 데이터
+
+[추가 GPS 기능]
+- 홈에서 GPS 사용 토글
+- 브라우저 위치 권한으로 현재 위치/정확도 표시
+- 현재 위치와 코스 시작점 직선거리(Haversine) 계산
+- GPS OFF: 기존 랜덤 추천 동작 유지
+- GPS ON: 기존 종합점수 + 최대 0.18 GPS 근접 가산점으로 가까운 코스 우선
+- 결과 카드에 시작점까지 거리 표시
+- Leaflet 지도에 내 위치 파란 마커 및 시작점까지 점선 표시
+- 권한 거부/모듈 미설치 오류 안내
+
+[Vector DB]
+- 이 버전은 PostgreSQL + pgVector를 사용하므로 최초 1회 python build_db.py 실행이 필요함.
+- recommender.py가 DB에 없는 코스를 courses.csv에서 자동 후보 보완하므로 앱 추천에서는 90개를 유지함.
+- 처음 실행 후 아래 명령으로 90개 인덱스를 재생성 권장:
+  python build_db.py
+- 정상 기대 출력: 완료: PostgreSQL + pgVector에 90개 코스를 저장했습니다.
+
+[실행]
+1. pip install -r requirements.txt
+2. python build_db.py   (권장, 최초 1회)
+3. streamlit run app.py
+
+[GPS 주의]
+- 브라우저 위치 권한 허용 필요
+- HTTPS 또는 localhost 권장
+- 표시 거리는 도로 이동거리가 아니라 직선거리
