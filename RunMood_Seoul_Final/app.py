@@ -24,6 +24,22 @@ from runmood.database import (
 
 st.set_page_config(page_title="RunMood Seoul", page_icon="🏃", layout="wide")
 
+# ==========================================
+# [속도 개선] 무거운 데이터 불러오기 캐싱
+# ==========================================
+@st.cache_data(max_entries=50, show_spinner=False)
+def get_route_feature_cached(course_id):
+    """무거운 GeoJSON 경로 데이터를 한 번만 읽고 메모리에 저장합니다."""
+    if not course_id:
+        return None
+    return get_route_feature(course_id)
+
+@st.cache_data(ttl=30, show_spinner=False)
+def list_shared_courses_cached():
+    """공유 커뮤니티 목록을 30초 동안 캐싱하여 무의미한 DB 조회를 막습니다."""
+    return list_shared_courses()
+
+
 # --- 전화번호 포맷팅 함수 (Python 안정적인 방식) ---
 def format_phone_number(raw_num: str) -> str:
     digits = re.sub(r"[^0-9]", "", str(raw_num or ""))[:11]
@@ -961,7 +977,9 @@ elif st.session_state.page == "results":
             elif r.get("kakao_status") not in ("ok", None):
                 st.warning(f"Kakao 상태: {r.get('kakao_status')} {r.get('kakao_message','')}")
 
-        feat = get_route_feature(r.get("course_id"))
+        # [속도 개선] 캐싱된 함수로 교체하여 매번 지도를 그릴 때마다 발생하는 렉 방지
+        feat = get_route_feature_cached(r.get("course_id"))
+        
         if feat:
             map_html, facilities = build_leaflet_map(r, feat, height=600)
             if map_html:
@@ -1047,6 +1065,9 @@ elif st.session_state.page == "share":
         if st.button("📝 등록하기", type="primary", use_container_width=True):
             creator = st.session_state.logged_in_user.get("nickname") or st.session_state.logged_in_user.get("name", "익명 러너") if st.session_state.logged_in_user else "익명 러너"
             add_shared_course(course, conds, display_km, creator)
+            
+            # [속도 개선] 새 코스가 등록되었으므로 커뮤니티 캐시를 즉시 초기화하여 실시간 반영
+            list_shared_courses_cached.clear()
 
             st.success("🎉 'RunMood 코스공유' 사이트에 코스가 성공적으로 등록되었습니다!")
             st.balloons()
@@ -1068,7 +1089,8 @@ elif st.session_state.page == "community":
 
     st.divider()
 
-    shared_list = list_shared_courses()
+    # [속도 개선] 무거운 DB 조회를 캐싱된 함수로 교체 (화면 조작 시 렉 방지)
+    shared_list = list_shared_courses_cached()
 
     if not shared_list:
         st.info("아직 등록된 공유 코스가 없습니다. 나만의 코스를 골라 첫 번째로 등록해 보세요!")
@@ -1096,7 +1118,9 @@ elif st.session_state.page == "community":
                     st.session_state[map_toggle_key] = not st.session_state[map_toggle_key]
 
                 if st.session_state[map_toggle_key]:
-                    feat = get_route_feature(c.get("course_id"))
+                    # [속도 개선] 캐싱된 함수로 교체하여 지도 열기/닫기 렉 방지
+                    feat = get_route_feature_cached(c.get("course_id"))
+                    
                     if feat:
                         map_html, facilities = build_leaflet_map(c, feat, height=450)
                         if map_html:
@@ -1110,10 +1134,14 @@ elif st.session_state.page == "community":
                 with col_like:
                     if st.button(f"👍 추천 ({item['likes']})", key=f"like_{idx}", use_container_width=True):
                         increment_reaction(item['id'], 'likes')
+                        # [속도 개선] 버튼 클릭 시 실시간 반영을 위해 캐시 초기화
+                        list_shared_courses_cached.clear()
                         st.rerun()
                 with col_dislike:
                     if st.button(f"👎 비추 ({item['dislikes']})", key=f"dislike_{idx}", use_container_width=True):
                         increment_reaction(item['id'], 'dislikes')
+                        # [속도 개선] 버튼 클릭 시 실시간 반영을 위해 캐시 초기화
+                        list_shared_courses_cached.clear()
                         st.rerun()
 
                 st.divider()
